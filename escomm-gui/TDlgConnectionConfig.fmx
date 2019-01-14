@@ -1,0 +1,21 @@
+inherited DlgConnectionConfig: TDlgConnectionConfig
+  BorderStyle = Single
+  Caption = 'Connection configuration'
+  ClientHeight = 190
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited layContents_: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 154.000000000000000000
+  end
+  inherited layBtns_: TLayout
+    Position.Y = 154.000000000000000000
+    Size.Width = 450.000000000000000000
+    inherited btnCancel_: TButton
+      Position.X = 366.000000000000000000
+    end
+    inherited btnOk_: TButton
+      Position.X = 282.000000000000000000
+    end
+  end
+end

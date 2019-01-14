@@ -1,0 +1,70 @@
+object FrmChannelIoConfig: TFrmChannelIoConfig
+  Size.Width = 450.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object layContents_: TLayout
+    Align = Client
+    Size.Width = 450.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+    object layConfig_: TLayout
+      Align = Client
+      Size.Width = 450.000000000000000000
+      Size.Height = 207.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object laySelector_: TGridPanelLayout
+      Align = Top
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Size.Width = 450.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      ColumnCollection = <
+        item
+          SizeStyle = Absolute
+          Value = 180.000000000000000000
+        end
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = lblChannel_
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = cbxChannel_
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object lblChannel_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object cbxChannel_: TComboBox
+        Align = Client
+        Size.Width = 266.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+        OnChange = cbxChannel_Change
+      end
+    end
+  end
+end

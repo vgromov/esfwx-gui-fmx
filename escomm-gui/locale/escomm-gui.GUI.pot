@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tttt.llp-escomm_gui_ecc22.bpl\n"
+"POT-Creation-Date: 2015-06-24 16:41\n"
+"PO-Revision-Date: 2015-06-24 16:41\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: LinLocalize for Windows V1.45\n"
+
+msgid "Channel configuration"
+msgstr ""
+
+msgid "Connection configuration"
+msgstr ""
+
+msgid "Select channel:"
+msgstr ""
+
+msgid "Advanced"
+msgstr ""
+
+msgid "Reset To Defaults"
+msgstr ""
+
+msgid "Channel:"
+msgstr ""
+
+msgid "Protocol:"
+msgstr ""

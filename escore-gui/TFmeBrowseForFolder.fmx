@@ -1,0 +1,81 @@
+object FmeBrowseForFolder: TFmeBrowseForFolder
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object layCurFolder_: TLayout
+    Align = Top
+    Margins.Bottom = 4.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object edCurFolder_: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      ReadOnly = True
+      Margins.Right = 4.000000000000000000
+      Size.Width = 146.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object btnGotoHome_: TSpeedButton
+      Align = Right
+      Position.X = 270.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnGotoHome_Click
+    end
+    object lblCurFolder_: TLabel
+      Align = Left
+      Size.Width = 120.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Folder:'
+    end
+  end
+  object lbFolders_: TListBox
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 180.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnDblClick = lbFolders_DblClick
+    AlternatingRowBackground = True
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = lbFolders_ItemClick
+    Viewport.Width = 320.000000000000000000
+    Viewport.Height = 180.000000000000000000
+  end
+  object layCurFile_: TLayout
+    Align = Top
+    Margins.Bottom = 4.000000000000000000
+    Position.Y = 30.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object edCurFile_: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      ReadOnly = True
+      Margins.Right = 4.000000000000000000
+      Size.Width = 196.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      OnChangeTracking = edCurFile_ChangeTracking
+    end
+    object lblCurFile_: TLabel
+      Align = Left
+      Size.Width = 120.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'File:'
+    end
+  end
+end

@@ -1,0 +1,75 @@
+object TStyleContainer
+  object TLayout
+    StyleName = 'progressMonitorItemStyle'
+    DesignVisible = False
+    Height = 50.000000000000000000
+    Position.X = 258.000000000000000000
+    Position.Y = 274.000000000000000000
+    Width = 326.000000000000000000
+    object TSpeedButton
+      StyleName = 'button'
+      Align = alLeft
+      EnableDragHighlight = False
+      Height = 44.000000000000000000
+      Margins.LeftI = 3
+      Margins.RightI = 3
+      Margins.TopI = 3
+      Margins.BottomI = 3
+      Position.X = 3.000000000000000000
+      Position.Y = 3.000000000000000000
+      StyleLookup = 'treeviewexpanderbuttonstyle'
+      Width = 15.000000000000000000
+    end
+    object TLayout
+      Align = alContents
+      EnableDragHighlight = False
+      Height = 50.000000000000000000
+      Margins.LeftI = 20
+      Width = 306.000000000000000000
+      object TRectangle
+        StyleName = 'taskTextRect'
+        Align = alTop
+        EnableDragHighlight = False
+        Fill.Color = claNull
+        Height = 24.000000000000000000
+        HitTest = False
+        Stroke.Color = claNull
+        Visible = False
+        Width = 306.000000000000000000
+        object TText
+          StyleName = 'taskText'
+          Align = alClient
+          Color = claBlack
+          EnableDragHighlight = False
+          Font.Style = [fsBold]
+          Height = 24.000000000000000000
+          HitTest = False
+          Visible = False
+          Width = 306.000000000000000000
+          WordWrap = False
+        end
+      end
+      object TRectangle
+        StyleName = 'progressRect'
+        Align = alClient
+        EnableDragHighlight = False
+        Fill.Color = claNull
+        Height = 26.000000000000000000
+        HitTest = False
+        Stroke.Color = claNull
+        Visible = False
+        Width = 306.000000000000000000
+        object TText
+          StyleName = 'progressText'
+          Align = alClient
+          Color = claBlack
+          EnableDragHighlight = False
+          Height = 26.000000000000000000
+          HitTest = False
+          Visible = False
+          Width = 306.000000000000000000
+        end
+      end
+    end
+  end
+end  
