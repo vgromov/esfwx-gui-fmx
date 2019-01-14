@@ -12,7 +12,7 @@
 
 /// Object configuration pane interface
 ///
-ES_DECL_INTF_BEGIN2( 8CC19CF9, D0B24b4c, 8D361982, 26E276BA, EsReflectedObjectConfigPaneIntf, EsBaseIntf )
+ES_DECL_INTF_BEGIN( 8CC19CF9, D0B24b4c, 8D361982, 26E276BA, EsReflectedObjectConfigPaneIntf)
 	ES_DECL_INTF_METHOD(EsString, getObjectName)() const = 0;
 	/// Access pane owner form
 	ES_DECL_INTF_METHOD(TForm*, getOwner)() = 0;
