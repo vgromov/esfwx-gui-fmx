@@ -1,0 +1,124 @@
+object FmeAppLog: TFmeAppLog
+  Padding.Left = 2.000000000000000000
+  Padding.Top = 2.000000000000000000
+  Padding.Right = 2.000000000000000000
+  Padding.Bottom = 2.000000000000000000
+  Size.Width = 539.000000000000000000
+  Size.Height = 248.000000000000000000
+  Size.PlatformDefault = False
+  object logView_: TGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    PopupMenu = mnu_
+    Size.Width = 535.000000000000000000
+    Size.Height = 244.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    RowHeight = 21.000000000000000000
+    RowCount = 0
+    Options = [AlternatingRowBackground, ColumnResize, ColumnMove, ColLines, RowLines, Tabs, Header, HeaderClick]
+    OnGetValue = logView_GetValue
+    Viewport.Width = 535.000000000000000000
+    Viewport.Height = 244.000000000000000000
+    object colTimestamp_: TStringColumn
+    end
+    object colLevel_: TStringColumn
+    end
+    object colMessage_: TStringColumn
+    end
+    object colData_: TStringColumn
+    end
+  end
+  object mnu_: TPopupMenu
+    Left = 40
+    Top = 150
+    object mnuFile_: TMenuItem
+      Action = actFile_
+      Enabled = True
+      ImageIndex = -1
+      object mnuFileSave_: TMenuItem
+        Tag = 1
+        Action = actFileSave_
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+    end
+    object mnuActions_: TMenuItem
+      Action = actActions_
+      Enabled = True
+      ImageIndex = -1
+      object mnuActionsClear_: TMenuItem
+        Tag = 3
+        Action = actActionsClear_
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+    end
+    object mnuConfig_: TMenuItem
+      Action = actConfig_
+      Enabled = True
+      ImageIndex = -1
+      object mnuConfigDumpFolder_: TMenuItem
+        Action = actConfigDumpFolder_
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object mnuConfigDoDump_: TMenuItem
+        Action = actConfigDoDump_
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+    end
+  end
+  object acts_: TActionList
+    Left = 40
+    Top = 198
+    object actFile_: TAction
+      Category = 'File'
+      Text = 'File'
+      OnExecute = actDummy_Execute
+    end
+    object actFileSave_: TAction
+      Category = 'File'
+      Text = 'Save log'
+      Hint = 'Save application log to file'
+      OnExecute = actFileSave_Execute
+      OnUpdate = actFileSave_Update
+    end
+    object actActions_: TAction
+      Category = 'Actions'
+      Text = 'Actions'
+      OnExecute = actDummy_Execute
+    end
+    object actActionsClear_: TAction
+      Category = 'Actions'
+      Text = 'Clear log'
+      Hint = 'Clear application log'
+      OnExecute = actActionsClear_Execute
+      OnUpdate = actActionsClear_Update
+    end
+    object actConfig_: TAction
+      Category = 'Config'
+      Text = 'Configure'
+      OnExecute = actDummy_Execute
+    end
+    object actConfigDumpFolder_: TAction
+      Category = 'Config'
+      Text = 'Log dump folder'
+      Hint = 'Select dump folder for automatic log dump'
+      OnExecute = actConfigDumpFolder_Execute
+    end
+    object actConfigDoDump_: TAction
+      Category = 'Config'
+      Text = 'Dump log'
+      Hint = 'Perform log automatic dump to file'
+      OnExecute = actConfigDoDump_Execute
+      OnUpdate = actConfigDoDump_Update
+    end
+  end
+end

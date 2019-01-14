@@ -1,0 +1,46 @@
+inherited DlgUserPrompt: TDlgUserPrompt
+  ClientHeight = 179
+  ClientWidth = 355
+  DesignerMasterStyle = 0
+  inherited layContents_: TLayout
+    Size.Width = 355.000000000000000000
+    Size.Height = 143.000000000000000000
+    object img_: TGlyph
+      Align = Left
+      Position.X = 4.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 135.000000000000000000
+      Size.PlatformDefault = False
+      OnChanged = img_Changed
+    end
+    object txt_: TLabel
+      Align = Client
+      Margins.Left = 4.000000000000000000
+      Size.Width = 279.000000000000000000
+      Size.Height = 135.000000000000000000
+      Size.PlatformDefault = False
+      OnApplyStyleLookup = txt_ApplyStyleLookup
+    end
+  end
+  inherited layBtns_: TLayout
+    Position.Y = 143.000000000000000000
+    Size.Width = 355.000000000000000000
+    inherited btnCancel_: TButton
+      Position.X = 271.000000000000000000
+    end
+    inherited btnOk_: TButton
+      Position.X = 103.000000000000000000
+    end
+    object btnMed_: TButton
+      Align = Right
+      Margins.Left = 4.000000000000000000
+      Position.X = 187.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+  end
+end

@@ -1,0 +1,134 @@
+inherited FrmEsProtocolConfig: TFrmEsProtocolConfig
+  inherited layContents_: TGridPanelLayout
+    Align = Top
+    Size.Height = 65.000000000000000000
+    ColumnCollection = <
+      item
+        SizeStyle = Absolute
+        Value = 180.000000000000000000
+      end
+      item
+        Value = 100.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = btnResetToDefaults_
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = lblClientAddr_
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = cbxClientAddr_
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end>
+    object btnResetToDefaults_: TButton
+      Align = Client
+      Size.Width = 176.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+      OnClick = btnResetToDefaults_Click
+    end
+    object lblClientAddr_: TLabel
+      Align = Client
+      Size.Width = 176.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+    object cbxClientAddr_: TComboEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 3
+      ItemHeight = 19.000000000000000000
+      ItemIndex = -1
+      Size.Width = 136.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+  end
+  object advanced_: TExpander
+    Align = Top
+    IsExpanded = False
+    Position.Y = 65.000000000000000000
+    ShowCheck = False
+    Size.Width = 320.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnApplyStyleLookup = advanced_ApplyStyleLookup
+    ContentSize = '200'
+    object layAdvanced_: TGridPanelLayout
+      Align = Top
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          SizeStyle = Absolute
+          Value = 180.000000000000000000
+        end
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = lblPacketTmo_
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = edPacketTmo_
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end
+        item
+          SizeStyle = Auto
+        end>
+      object lblPacketTmo_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object edPacketTmo_: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 1
+        Cursor = crIBeam
+        KeyboardType = Default
+        Size.Width = 136.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+    end
+  end
+end

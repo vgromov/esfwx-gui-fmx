@@ -1,0 +1,43 @@
+object FrmConnectionConfig: TFrmConnectionConfig
+  Size.Width = 450.000000000000000000
+  Size.Height = 267.000000000000000000
+  Size.PlatformDefault = False
+  object layContents_: TLayout
+    Align = Client
+    Padding.Left = 2.000000000000000000
+    Padding.Top = 2.000000000000000000
+    Padding.Right = 2.000000000000000000
+    Padding.Bottom = 2.000000000000000000
+    Size.Width = 450.000000000000000000
+    Size.Height = 267.000000000000000000
+    Size.PlatformDefault = False
+    object gbxProtocol_: TGroupBox
+      Align = Top
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 22.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Position.X = 2.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 446.000000000000000000
+      Size.Height = 111.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnApplyStyleLookup = gbx_ApplyStyleLookup
+    end
+    object gbxChannel_: TGroupBox
+      Align = Top
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 22.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Position.X = 2.000000000000000000
+      Position.Y = 113.000000000000000000
+      Size.Width = 446.000000000000000000
+      Size.Height = 152.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnApplyStyleLookup = gbx_ApplyStyleLookup
+    end
+  end
+end
