@@ -24,7 +24,7 @@
 #	define ESCORE_GUI_CLASS
 #	define ESCORE_GUI_FUNC(type, decl)    type decl
 #	define ESCORE_GUI_DATA(type, decl)    type decl
-#	define ESCORE_GUI_PKG                 PACKAGE
+#	define ESCORE_GUI_PKG
 #endif
 
 // system|rtl stuff
@@ -40,14 +40,14 @@
 typedef std::set<TObject*> EsObjectSet;
 
 /// FWD decls
-class PACKAGE EsI18nManager;
-class PACKAGE EsBusyMessage;
-class PACKAGE TFrmReflectedClassConfig;
-class PACKAGE TFmeBrowseForFolder;
-class PACKAGE TFmeProgressMonitorView;
-class PACKAGE TDlgBase;
-class PACKAGE TDlgUserPrompt;
-class PACKAGE TDlgBrowseForFolder;
+class ESCORE_GUI_PKG EsI18nManager;
+class ESCORE_GUI_PKG EsBusyMessage;
+class ESCORE_GUI_PKG TFrmReflectedClassConfig;
+class ESCORE_GUI_PKG TFmeBrowseForFolder;
+class ESCORE_GUI_PKG TFmeProgressMonitorView;
+class ESCORE_GUI_PKG TDlgBase;
+class ESCORE_GUI_PKG TDlgUserPrompt;
+class ESCORE_GUI_PKG TDlgBrowseForFolder;
 
 // our headers
 #if defined(ES_USE_AUTO_UPDATER) && (ES_OS == ES_OS_WINDOWS)

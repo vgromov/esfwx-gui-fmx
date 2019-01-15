@@ -574,7 +574,7 @@ EsString EsI18nManager::translationGet(const EsString& orgstr)
 		m_re.set_text(orgstr);
 		while( m_re.get_matches() )
 		{
-			size_t start, len;
+			ulong start, len;
 			if( m_re.matchGet(start, len, 1) )
 			{
 				EsString::const_iterator beg = orgstr.begin()+start;
