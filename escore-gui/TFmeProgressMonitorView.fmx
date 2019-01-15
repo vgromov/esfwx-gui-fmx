@@ -9,8 +9,8 @@ object FmeProgressMonitorView: TFmeProgressMonitorView
     Size.PlatformDefault = False
     StyleLookup = 'progressViewStyle'
     TabOrder = 0
-    Viewport.Width = 426.000000000000000000
-    Viewport.Height = 46.000000000000000000
+    Viewport.Width = 430.000000000000000000
+    Viewport.Height = 50.000000000000000000
   end
   object txtReady_: TText
     StyleName = 'readyText'

@@ -24,8 +24,8 @@ ES_DECL_INTF_END
 
 /// Reflectd property link classes
 ///
-class PACKAGE EsReflectedClassDataSource;
-class PACKAGE EsReflectedClassPropertyLink;
+class ESCORE_GUI_PKG EsReflectedClassDataSource;
+class ESCORE_GUI_PKG EsReflectedClassPropertyLink;
 
 /// Reflected property GUI link base class
 ///

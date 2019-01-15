@@ -247,7 +247,10 @@ __fastcall TFmeProgressMonitorView::TFmeProgressMonitorView(TComponent* Owner) :
 TFrame(Owner),
 m_handler(this),
 m_defHeight(20),
-m_items(esT("ProgressMonitorView"))
+m_items(
+  EsStringIndexedMap::ContainerUsesInterlock,
+  esT("ProgressMonitorView")
+)
 {
   txtReady_->Text = _("Ready");
   saveDefaultHeight();
