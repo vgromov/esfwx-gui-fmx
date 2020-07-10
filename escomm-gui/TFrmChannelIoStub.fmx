@@ -1,0 +1,31 @@
+inherited FrmChannelIoStub: TFrmChannelIoStub
+  Size.Height = 88.000000000000000000
+  inherited layContents_: TGridPanelLayout
+    Size.Height = 88.000000000000000000
+    ColumnCollection = <
+      item
+        Value = 100.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = lblStub_
+        Row = 0
+      end>
+    RowCollection = <
+      item
+        Value = 100.000000000000000000
+      end
+      item
+        SizeStyle = Auto
+      end>
+    object lblStub_: TLabel
+      Align = Client
+      AutoSize = True
+      Size.Width = 316.000000000000000000
+      Size.Height = 84.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+    end
+  end
+end

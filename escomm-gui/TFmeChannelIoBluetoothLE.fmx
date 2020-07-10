@@ -1,0 +1,107 @@
+inherited FmeChannelIoBluetoothLE: TFmeChannelIoBluetoothLE
+  Size.Height = 94.000000000000000000
+  inherited layContents_: TGridPanelLayout
+    Size.Height = 94.000000000000000000
+    ControlCollection = <
+      item
+        Column = 0
+        Control = btnResetToDefaults_
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Layout2
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = lblDevice_
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = lblSubscribeToNotifications_
+        Row = 2
+      end
+      item
+        Column = 1
+        Control = swSubscribeToNotifications_
+        Row = 2
+      end>
+    RowCollection = <
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end>
+    object btnResetToDefaults_: TButton
+      Align = Client
+      Size.Width = 156.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+    object Layout2: TLayout
+      Align = Client
+      Anchors = []
+      Size.Width = 156.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object cbxDevice_: TComboBox
+        Align = Client
+        Size.Width = 130.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object btnRescan_: TButton
+        Align = Right
+        Margins.Left = 2.000000000000000000
+        Position.X = 132.000000000000000000
+        Size.Width = 24.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'refreshtoolbuttonbordered'
+        TabOrder = 2
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+        OnClick = btnRescan_Click
+      end
+    end
+    object lblDevice_: TLabel
+      Align = Client
+      Anchors = []
+      Size.Width = 156.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+    object lblSubscribeToNotifications_: TLabel
+      Align = Client
+      Size.Width = 156.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+    object swSubscribeToNotifications_: TSwitch
+      Align = Left
+      IsChecked = False
+      Position.X = 162.000000000000000000
+      Position.Y = 62.000000000000000000
+      Size.Width = 78.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+  end
+end

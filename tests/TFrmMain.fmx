@@ -1,0 +1,51 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Test Main'
+  ClientHeight = 480
+  ClientWidth = 640
+  StyleBook = styleTest_
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object styleTest_: TStyleBook
+    Left = 576
+    Top = 432
+    ResourcesBin = {464D585F5354594C4520322E350100}
+  end
+  object log_: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 426.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Top
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Button1: TButton
+      Align = Left
+      Position.X = 4.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Button1'
+      OnClick = Button1Click
+    end
+  end
+end

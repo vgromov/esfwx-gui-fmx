@@ -1,0 +1,64 @@
+object DlgBase: TDlgBase
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  ClientHeight = 240
+  ClientWidth = 320
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnClose = FormClose
+  OnResize = FormResize
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object layContents_: TLayout
+    Align = Client
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 204.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object layBtns_: TLayout
+    Align = Bottom
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Position.Y = 204.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    object btnCancel_: TButton
+      Align = Right
+      Cancel = True
+      ModalResult = 2
+      Margins.Left = 4.000000000000000000
+      Position.X = 236.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = '&Cancel'
+      OnApplyStyleLookup = btn_ApplyStyleLookup
+    end
+    object btnOk_: TButton
+      Align = Right
+      Default = True
+      ModalResult = 1
+      Margins.Left = 4.000000000000000000
+      Position.X = 152.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'OK'
+      OnApplyStyleLookup = btn_ApplyStyleLookup
+    end
+  end
+end

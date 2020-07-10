@@ -1,0 +1,434 @@
+inherited FrmChannelIoEkonnect: TFrmChannelIoEkonnect
+  Size.Height = 395.000000000000000000
+  inherited layContents_: TGridPanelLayout
+    Align = Top
+    Size.Height = 125.000000000000000000
+    ColumnCollection = <
+      item
+        SizeStyle = Absolute
+        Value = 180.000000000000000000
+      end
+      item
+        Value = 100.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = btnResetToDefaults_
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = lblDevice_
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = Layout2
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = lblBaud_
+        Row = 2
+      end
+      item
+        Column = 1
+        Control = cbxBaud_
+        Row = 2
+      end
+      item
+        Column = 0
+        Control = lblUseRS232_
+        Row = 3
+      end
+      item
+        Column = 1
+        Control = swUseRS232_
+        Row = 3
+      end>
+    RowCollection = <
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end>
+    object btnResetToDefaults_: TButton
+      Align = Client
+      Size.Width = 176.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+      OnClick = btnResetToDefaults_Click
+    end
+    object lblDevice_: TLabel
+      Align = Client
+      Size.Width = 176.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+    object Layout2: TLayout
+      Align = Client
+      Size.Width = 136.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object btnRescan_: TButton
+        Align = Right
+        Margins.Left = 2.000000000000000000
+        Position.X = 112.000000000000000000
+        Size.Width = 24.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'refreshtoolbuttonbordered'
+        TabOrder = 0
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+        OnClick = btnRescan_Click
+      end
+      object cbxDevice_: TComboBox
+        Align = Client
+        Anchors = []
+        Size.Width = 110.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+    end
+    object lblBaud_: TLabel
+      Align = Client
+      Size.Width = 176.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+    object cbxBaud_: TComboBox
+      Align = Client
+      Anchors = []
+      Size.Width = 136.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+    object lblUseRS232_: TLabel
+      Align = Client
+      Size.Width = 176.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+    object swUseRS232_: TSwitch
+      Align = Left
+      IsChecked = False
+      Position.X = 182.000000000000000000
+      Position.Y = 92.000000000000000000
+      Size.Width = 78.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      OnApplyStyleLookup = ctl_ApplyStyleLookup
+    end
+  end
+  object advanced_: TExpander
+    Align = Top
+    IsExpanded = False
+    Position.Y = 125.000000000000000000
+    ShowCheck = False
+    Size.Width = 320.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnApplyStyleLookup = advanced_ApplyStyleLookup
+    ContentSize = '200'
+    object layAdvanced_: TGridPanelLayout
+      Align = Top
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 243.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ColumnCollection = <
+        item
+          SizeStyle = Absolute
+          Value = 180.000000000000000000
+        end
+        item
+          Value = 100.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = lblBits_
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = cbxBits_
+          Row = 0
+        end
+        item
+          Column = 0
+          Control = lblParity_
+          Row = 1
+        end
+        item
+          Column = 1
+          Control = cbxParity_
+          Row = 1
+        end
+        item
+          Column = 0
+          Control = lblStopBit_
+          Row = 2
+        end
+        item
+          Column = 1
+          Control = cbxStopBit_
+          Row = 2
+        end
+        item
+          Column = 0
+          Control = lblRxBuff_
+          Row = 3
+        end
+        item
+          Column = 1
+          Control = edRxBuff_
+          Row = 3
+        end
+        item
+          Column = 0
+          Control = lblTxBuff_
+          Row = 4
+        end
+        item
+          Column = 1
+          Control = edTxBuff_
+          Row = 4
+        end
+        item
+          Column = 0
+          Control = lblRxTmo_
+          Row = 5
+        end
+        item
+          Column = 1
+          Control = edRxTmo_
+          Row = 5
+        end
+        item
+          Column = 0
+          Control = lblTxTmo_
+          Row = 6
+        end
+        item
+          Column = 1
+          Control = edTxTmo_
+          Row = 6
+        end
+        item
+          Column = 0
+          Control = lblAutoReset_
+          Row = 7
+        end
+        item
+          Column = 1
+          Control = swAutoReset_
+          Row = 7
+        end>
+      RowCollection = <
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end
+        item
+          SizeStyle = Absolute
+          Value = 30.000000000000000000
+        end>
+      object lblBits_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object cbxBits_: TComboBox
+        Align = Client
+        Anchors = []
+        Size.Width = 16.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object lblParity_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object cbxParity_: TComboBox
+        Align = Client
+        Anchors = []
+        Size.Width = 16.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object lblStopBit_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object cbxStopBit_: TComboBox
+        Align = Client
+        Anchors = []
+        Size.Width = 16.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object lblRxBuff_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object edRxBuff_: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        Anchors = []
+        TabOrder = 7
+        Cursor = crIBeam
+        KeyboardType = Default
+        Size.Width = 16.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object lblTxBuff_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object edTxBuff_: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        Anchors = []
+        TabOrder = 9
+        Cursor = crIBeam
+        KeyboardType = Default
+        Size.Width = 16.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object lblRxTmo_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object edRxTmo_: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        Anchors = []
+        TabOrder = 11
+        Cursor = crIBeam
+        KeyboardType = Default
+        Size.Width = 16.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object lblTxTmo_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object edTxTmo_: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        Anchors = []
+        TabOrder = 13
+        Cursor = crIBeam
+        KeyboardType = Default
+        Size.Width = 16.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object lblAutoReset_: TLabel
+        Align = Client
+        Size.Width = 176.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+      object swAutoReset_: TSwitch
+        Align = Left
+        Anchors = []
+        IsChecked = False
+        Position.X = 182.000000000000000000
+        Position.Y = 212.000000000000000000
+        Size.Width = 78.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 15
+        OnApplyStyleLookup = ctl_ApplyStyleLookup
+      end
+    end
+  end
+end

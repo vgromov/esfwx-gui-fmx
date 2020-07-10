@@ -1,0 +1,32 @@
+inherited DlgBrowseForFolder: TDlgBrowseForFolder
+  DesignerMasterStyle = 0
+  inherited layContents_: TLayout
+    inline browser_: TFmeBrowseForFolder
+      Align = Client
+      Size.Width = 312.000000000000000000
+      Size.Height = 196.000000000000000000
+      Size.PlatformDefault = False
+      inherited layCurFolder_: TLayout
+        Size.Width = 312.000000000000000000
+        inherited edCurFolder_: TEdit
+          Size.Width = 138.000000000000000000
+        end
+        inherited btnGotoHome_: TSpeedButton
+          Position.X = 262.000000000000000000
+        end
+      end
+      inherited lbFolders_: TListBox
+        Size.Width = 312.000000000000000000
+        Size.Height = 136.000000000000000000
+        Viewport.Width = 308.000000000000000000
+        Viewport.Height = 132.000000000000000000
+      end
+      inherited layCurFile_: TLayout
+        Size.Width = 312.000000000000000000
+        inherited edCurFile_: TEdit
+          Size.Width = 188.000000000000000000
+        end
+      end
+    end
+  end
+end

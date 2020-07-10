@@ -1,0 +1,21 @@
+inherited DlgChannelIoConfig: TDlgChannelIoConfig
+  BorderStyle = Single
+  Caption = 'Channel configuration'
+  ClientHeight = 170
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited layContents_: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 134.000000000000000000
+  end
+  inherited layBtns_: TLayout
+    Position.Y = 134.000000000000000000
+    Size.Width = 450.000000000000000000
+    inherited btnCancel_: TButton
+      Position.X = 366.000000000000000000
+    end
+    inherited btnOk_: TButton
+      Position.X = 282.000000000000000000
+    end
+  end
+end
